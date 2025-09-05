@@ -9,22 +9,23 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-build-mode = "both"                                                   
-excluded-patches = ""                                                 
-included-patches = "" 
-patcher-args = " -e 'GmsCore support' -OpackageNameYouTube='yt.rvx.noname.exe' "
-version = "auto"                                                      
-exclusive-patches = false                                             
+build-mode = "module"
+arch = "arm64-v8a"
+excluded-patches = "'Custom branding icon for YouTube' 'Translations for YouTube' 'Custom branding name for YouTube' 'Theme' 'MaterialYou' 'Enable gradient loading screen' 'Force hide player buttons background'"
+included-patches = "'Visual preferences icons'"
+patcher-args = " -e 'GmsCore support' -OpackageNameYouTube='com.rvx.android.youtube'"
+version = "auto"
+exclusive-patches = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "yt-rvx"
 
 [Music]
-arch = "both"
-build-mode = "both"
+arch = "arm64-v8a"
+build-mode = "module"
 app-name = "YouTube-Music"
-excluded-patches = ""
+excluded-patches = "'Custom branding Icon for YouTube Music' 'Custom branding name for YouTube Music' 'Dark theme'"
 included-patches = ""
-patcher-args = " -e 'GmsCore support' -OpackageNameYouTubeMusic='ytm.rvx.noname.exe' "
+patcher-args = " -e 'GmsCore support' -OpackageNameYouTubeMusic='com.rvx.android.youtube.music'"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytm-rvx"
