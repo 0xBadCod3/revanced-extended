@@ -1,5 +1,4 @@
-Music (arm64-v8a): 8.30.54  
-Music (arm-v7a): 8.30.54  
+Music: 8.30.54  
 YouTube: 19.47.53  
 
 Install [MicroG](https://github.com/ReVanced/GmsCore/releases) to be able to use non-root YouTube or YouTube-Music.  
